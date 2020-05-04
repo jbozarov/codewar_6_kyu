@@ -25,3 +25,16 @@ function foo (n) {
 	}
 	return arr; 
 }
+
+
+function loneliest (n) {
+	let obj = {}; 
+	let arr = n.toString().split('').map(v => Number(v)); 
+	for ( let i = 0; i < arr.length; i++ ) {
+		let temp = [...arr.slice( i-arr[i]>0 ? i-arr[i] : 0, i ), ...arr.slice(i+1, i+arr[i]+1 )]
+		obj[arr[i]] = temp.reduce((a, b) => a + b, 0); 
+	}
+	let min = Math.min(...Object.values(obj))
+	let keyMin = Math.min(...arr)
+	return obj[keyMin] === min; 
+}
