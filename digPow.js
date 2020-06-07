@@ -30,3 +30,6 @@ function digPow(n, p){
    }
    return  Number.isInteger(result/n) ? result/n : -1; 
  }
+
+
+
