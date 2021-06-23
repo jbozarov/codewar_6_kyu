@@ -1,4 +1,4 @@
-Enough is enough!
+/* Enough is enough!
 Alice and Bob were on a holiday. Both of them took many pictures of the places they've been, and now they want to 
 show Charlie their entire collection. However, Charlie doesn't like this sessions, since the motive usually repeats.
 He isn't fond of seeing the Eiffel tower 40 times. He tells them that he will only sit during the session if they show 
@@ -14,7 +14,7 @@ Example
   deleteNth ([1,1,1,1],2) // return [1,1]
 
   deleteNth ([20,37,20,21],1) // return [20,37,21]
-
+*/ 
 
 function deleteNth (arr, n) {
 	let result = []; 
