@@ -1,4 +1,4 @@
-#Find the missing letter
+/* #Find the missing letter
 
 Write a method that takes an array of consecutive (increasing) letters as input and that returns the missing 
 letter in the array.
@@ -13,7 +13,7 @@ Example:
 
 ["a","b","c","d","f"] -> "e"
 ["O","Q","R","S"] -> "P"
-
+*/
 
 
 function findMissingLetter(array){
