@@ -9,12 +9,12 @@ foo() {
 # if [ $1>$2*2 ]
 # then
 while [ $1>$2*2 ]
-do 
-    count+=1
-    $1+=1
-    $2+=1
-    echo count; 
-done
+    do 
+        count+=1
+        $1+=1
+        $2+=1
+        echo count; 
+    done
 }
 
 
