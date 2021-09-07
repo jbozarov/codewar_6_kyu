@@ -6,19 +6,18 @@ son_years_old=$2
 count=0
 
 foo() {
-    echo "Ehdkskfs" + $1 
-}
-# if [ "$dad_years_old" > "$son_years_old"*2 ]
+# if [ $1>$2*2 ]
 # then
-#     while [ "$dad_years_old" > "$son_years_old"*2 ]
-#     do 
-#         count+=1
-#         dad_years_old+=1
-#         son_years_old+=1
-#         echo count; 
-#     done
-# fi
+while [ $1>$2*2 ]
+do 
+    count+=1
+    $1+=1
+    $2+=1
+    echo count; 
+done
+}
 
-foo " skdfsdk "
+
+foo 30 7
 
 exit
